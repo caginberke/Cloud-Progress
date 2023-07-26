@@ -1,0 +1,138 @@
+# OverTheWire Answers
+
+**Level 0**
+
+`ssh bandit0@bandit.labs.overthewire.org -p 2220`  
+
+**Level 0->1**
+
+`cat ~/readme`  
+
+**Level 1->2**
+
+`ls`
+
+`cat ./-`  
+
+**Level 2->3**
+
+`ls`
+
+`cat "spaces in this filename"`  
+
+**Level 3->4**
+
+`cd inhere ` 
+
+`ls -a`
+
+`cat .hidden` 
+
+**Level 4->5**
+
+`cd inhere` 
+
+`ls -la`  
+
+`file ./* ` 
+
+`cat ./-file07`  
+
+**Level 5->6**
+
+`cd inhere`  
+
+`ls -la` 
+
+`ls -la maybehere00 X`
+
+`find . -type f -readable -size 1033c ! -executable`  
+
+**Level 6->7**
+
+`ls -l bandit7.password`
+
+`find / -type f -user bandit7 -group bandit6 -size 33c`
+
+`find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null`
+
+`cat /var/lib/dpkg/info/bandit7.password`  
+
+**Level 7->8**
+
+`grep "millionth" data.txt`  
+
+**Level 8->9**
+
+`sort data.txt | uniq -u`  
+
+**Level 9->10**
+
+`strings data.txt | grep ===`  
+
+**Level 10->11**
+
+`cat data.txt`  
+
+`base64 -d data.txt`  
+
+**Level 11->12**
+
+`cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`  
+
+**Level 12->13**
+
+`mkdir /tmp/nam1`
+
+`cd /tmp/nam1`
+
+`cp ~/data.txt .`
+
+`mv data.txt newdata`
+
+`xxd -r newdata compresseddata`
+
+`file compresseddata`
+
+`mv compresseddata compresseddata.gz`
+
+`gzip -d compresseddata.gz`
+
+`file compresseddata`
+
+`mv compresseddata compresseddata.bz2`
+
+`bzip2 -d compresseddata.bz2`
+
+`file compresseddata`
+
+`mv compresseddata compresseddata.gz`
+
+`gzip -d compresseddata.gz`
+
+`file compresseddata`
+
+`mv compresseddata compresseddata.tar`
+
+`tar -xf compresseddata.tar`
+
+`ls`
+
+`tar -xf data5.bin`
+
+`file data6.bin`
+
+`bzip2 -d data6.bin`
+
+`ls`
+
+`tar -xf data6.bin.out`
+
+`file data8.bin`
+
+`mv data8.bin data8.gz`
+
+`gzip -d data8.gz`  
+
+`cat data8`  
+
